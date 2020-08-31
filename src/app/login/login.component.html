@@ -1,0 +1,13 @@
+<!-- Have to take out of form to disable password autofill in Firefox -->
+<!-- <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off"> -->
+<input type="text" [formControl]="usernameForm" autocomplete="off" />
+<!-- (focus)="password.type = 'password'" this line is for disable password autofill in Safari -->
+<input
+  #password
+  type="text"
+  (focus)="password.type = 'password'"
+  [formControl]="passwordForm"
+  autocomplete="off"
+/>
+<button type="submit" (click)="onSubmit()">Login</button>
+<!-- </form> -->

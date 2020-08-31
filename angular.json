@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-password"
+    }
+  },
+  "defaultProject": "test-password",
+  "cli": {
+    "analytics": false
+  }
 }
